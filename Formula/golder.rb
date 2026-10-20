@@ -1,7 +1,6 @@
 class Golder < Formula
   desc "Terminal AI coding agent in Go"
   homepage "https://github.com/getan/golder"
-  version "1.4.0"
   license "MIT"
 
   on_macos do
