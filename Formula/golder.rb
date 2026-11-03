@@ -5,21 +5,21 @@
 class Golder < Formula
   desc "Terminal AI coding agent in Go"
   homepage "https://github.com/getan/golder"
-  version "1.5.48"
+  version "1.5.49"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/getan/golder/releases/download/v1.5.48/golder_1.5.48_Darwin_x86_64.tar.gz"
-      sha256 "bc5c80cefc185eac3af3b55f855a9e87d45f61a689edac9b4b98dbc38e39a4d9"
+      url "https://github.com/getan/golder/releases/download/v1.5.49/golder_1.5.49_Darwin_x86_64.tar.gz"
+      sha256 "3000f750e2e356e622102b5c3d3e55c4ca50d22a604397d0570584ebdb512081"
 
       define_method(:install) do
         bin.install "golder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/getan/golder/releases/download/v1.5.48/golder_1.5.48_Darwin_arm64.tar.gz"
-      sha256 "341ef8e975172b1221fb39b229fc0412e4a3db4144b22f8077ff0c7e50596d69"
+      url "https://github.com/getan/golder/releases/download/v1.5.49/golder_1.5.49_Darwin_arm64.tar.gz"
+      sha256 "cbe52a71dd23af26e6e023b22ff8f27e114fe6ae4c11e6ed4c2299f8e6d5d82f"
 
       define_method(:install) do
         bin.install "golder"
@@ -29,15 +29,15 @@ class Golder < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getan/golder/releases/download/v1.5.48/golder_1.5.48_Linux_x86_64.tar.gz"
-      sha256 "b39a5cd420447932d1f49387b51defd45793dfa66d0708e8598869e3a8e4f161"
+      url "https://github.com/getan/golder/releases/download/v1.5.49/golder_1.5.49_Linux_x86_64.tar.gz"
+      sha256 "09589a5e8116bf60264d7e2ce0164da254d317c81d0fd684cf0b813e9f141131"
       define_method(:install) do
         bin.install "golder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getan/golder/releases/download/v1.5.48/golder_1.5.48_Linux_arm64.tar.gz"
-      sha256 "8bd158ac2c6fa0e4e12c413bb56722f8d17cafe2a12d2036286dea56e04f5dab"
+      url "https://github.com/getan/golder/releases/download/v1.5.49/golder_1.5.49_Linux_arm64.tar.gz"
+      sha256 "a0bf3d59480268b9e0a2838451a60f5ca50a7646f17873c634b3c873afa407f4"
       define_method(:install) do
         bin.install "golder"
       end
